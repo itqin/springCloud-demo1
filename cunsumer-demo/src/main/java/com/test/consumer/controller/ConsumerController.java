@@ -38,6 +38,7 @@ public class ConsumerController {
 
     @GetMapping("/{id}")
     public User queryUserById(@PathVariable("id") Integer id){
+
         User user = userClient.queryUserById(id);
         return user;
     }
