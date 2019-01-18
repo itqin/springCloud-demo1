@@ -1,0 +1,20 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: consumer-demo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+ribbon:
+  eureka:
+    enabled: true
+
+#hystrix:
+#  commond:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#             timeoutInMilliseconds: 2000 设置熔断触发时间

@@ -1,0 +1,9 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eureka-server # 应用名称，会在Eureka中作为服务的id标识（serviceId）
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
