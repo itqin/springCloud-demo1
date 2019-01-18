@@ -21,7 +21,7 @@ public class ConsumerController {
 //    @Autowired
 //    private RestTemplate restTemplate;
 
-//    @GetMapping("/{id}")
+    //    @GetMapping("/{id}")
 //    //@HystrixCommand(fallbackMethod = "queryUserByIdFallBack")
 //    @HystrixCommand
 //    public String queryUserById(@PathVariable("id") Integer id){
@@ -37,7 +37,7 @@ public class ConsumerController {
     private UserClient userClient;
 
     @GetMapping("/{id}")
-    public User queryUserById(@PathVariable("id") Integer id){
+    public User queryUserById(@PathVariable("id") Integer id) {
 
         User user = userClient.queryUserById(id);
         return user;
